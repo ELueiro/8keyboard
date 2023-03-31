@@ -1,0 +1,156 @@
+body {
+  background-color: #fff4e0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.title {
+  color: #4d4d4d;
+  text-transform: uppercase;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  font-size: 1em;
+  letter-spacing: 0.3em;
+}
+
+.instructions {
+  color: #4d4d4d;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  font-size: 0.8em;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  list-style: none;
+  display: flex;
+}
+
+li {
+  height: 3em;
+  width: 3em;
+  color: rgba(0, 0, 0, 0.7);
+  border-radius: 0.4em;
+  line-height: 3em;
+  letter-spacing: 1px;
+  margin: 0.4em;
+  transition: 0.3s;
+  text-align: center;
+  font-size: 1em;
+}
+
+#tab {
+  width: 5em;
+}
+
+#caps {
+  width: 6em;
+}
+
+#left-shift {
+  width: 8em;
+}
+
+#enter {
+  width: 6em;
+}
+
+#right-shift {
+  width: 8em;
+}
+
+#back {
+  width: 5em;
+}
+
+#space {
+  width: 33em;
+}
+
+.pinky {
+  border: 2px solid #4c639c;
+  color: #4c639c;
+}
+
+.pinky.selected {
+  background-color: #4c639c;
+  color: #fff4e0;
+}
+
+.ring {
+  color: #2d3a5c;
+  border: 2px solid #2d3a5c;
+}
+
+.ring.selected {
+  background-color: #2d3a5c;
+  color: #fff4e0;
+}
+
+.middle {
+  color: #6b8bdb;
+  border: 2px solid #6b8bdb;
+}
+
+.middle.selected {
+  background-color: #6b8bdb;
+  color: #fff4e0;
+}
+
+.pointer1st {
+  color: #7293e8;
+  border: 2px solid #7293e8;
+}
+
+.pointer1st.selected {
+  background-color: #7293e8;
+  color: #fff4e0;
+}
+
+.pointer2nd {
+  color: #5f7ac1;
+  border: 2px solid #5f7ac1;
+}
+
+.pointer2nd.selected {
+  background-color: #5f7ac1;
+  color: #fff4e0;
+}
+
+.selected {
+  background-color: transparent;
+  animation: vibrate-1 0.5s linear infinite both;
+}
+
+.hit {
+  animation: hit 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@keyframes hit {
+  0% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes vibrate-1 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(0px, -7px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}/*# sourceMappingURL=style.css.map */
